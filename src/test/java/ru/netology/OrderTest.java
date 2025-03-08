@@ -19,7 +19,6 @@ public class OrderTest {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver","C:\\Program Files\\chromedriver-win64\\chromedriver.exe");
         WebDriverManager.chromedriver().setup();
     }
 
@@ -43,12 +42,13 @@ public class OrderTest {
     void shouldSendForm() {
         driver.get("http://localhost:9999");
         WebElement form = driver.findElement(By.cssSelector("form"));
-        form.findElements(By.cssSelector("input")).get(0).sendKeys("Артемий");
-        form.findElements(By.cssSelector("input")).get(1).sendKeys("+79183332323");
+        driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Артемий");
+        driver.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+78005553535");
         form.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         form.findElement(By.cssSelector("button")).click();
         WebElement result = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
         assertTrue(result.isDisplayed());
+        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", result.getText());
     }
 
 }
