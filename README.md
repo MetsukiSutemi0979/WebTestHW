@@ -1,1 +1,1 @@
-# Project Sample [![Build status](https://ci.appveyor.com/api/projects/status/61khbe75uveo5b0k?svg=true)](https://ci.appveyor.com/project/MetsukiSutemi0979/webtesthw)
+# Project Sample [![Java CI with Gradle](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml/badge.svg)](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml)
