@@ -48,7 +48,7 @@ public class OrderTest {
         form.findElement(By.cssSelector("button")).click();
         WebElement result = driver.findElement(By.cssSelector("[data-test-id=order-success]"));
         assertTrue(result.isDisplayed());
-        assertEquals("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", result.getText());
+        assertEquals("  Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", result.getText());
     }
 
 }
