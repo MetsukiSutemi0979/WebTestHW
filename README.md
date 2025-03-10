@@ -1,1 +1,1 @@
-# Project Sample [![Java CI with Gradle](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml/badge.svg)](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml)
+# Project Sample  [![Java CI with Gradle](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml/badge.svg)](https://github.com/MetsukiSutemi0979/WebTestHW/actions/workflows/gardle.yml)
